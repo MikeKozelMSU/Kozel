@@ -22,7 +22,6 @@ ui <- bootstrapPage(
     bottom = 'auto',
     width = 'auto', 
     draggable = T,
-    fixed = T,
     selectInput('map', "Map Type", choices = c( 
       "CartoDB.Positron",
       "Esri.WorldImagery"), 
@@ -65,6 +64,7 @@ server <- function(input, output, session) {
   })
   
 }
+
 
 # Run the application 
 shinyApp(ui = ui, server = server)
