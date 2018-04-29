@@ -14,7 +14,7 @@ ui <- bootstrapPage(
   absolutePanel(
     id = 'controls',
     class = 'panel panel-default',
-    fixed = T,
+    fixed = F,
     height = 'auto',
     top=50,
     right = 50,
